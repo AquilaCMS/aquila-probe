@@ -1,0 +1,30 @@
+{
+  "name": "aquila-probe",
+  "version": "1.0.0",
+  "description": "A probe to send data to Aquila Management",
+  "main": "index.js",
+  "engines": {
+    "node": ">=16.0.0"
+  },
+  "scripts": {
+    "start": "node index.js",
+    "start:dev": "nodemon index.js",
+    "start:pm2": "pm2 start ecosystem.config.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@bitbucket.org/NextSourcia/aquila-probe.git"
+  },
+  "author": "Mael VB",
+  "license": "ISC",
+  "homepage": "https://bitbucket.org/NextSourcia/aquila-probe#readme",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "lowdb": "^2.1.0",
+    "systeminformation": "^5.7.3"
+  },
+  "devDependencies": {
+    "yarn-upgrade-all": "^0.5.4"
+  }
+}
