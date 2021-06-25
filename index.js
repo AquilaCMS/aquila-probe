@@ -7,7 +7,7 @@ const { resolve } = require('path');
 
 global.apiDir = resolve(__dirname);
 
-const PORT = process.env.PORT || 5001;
+const PORT = process.env.PORT || 3050;
 const app = express();
 
 app.use(express.json({ limit: '50mb' }));
